@@ -14,7 +14,7 @@ public class ModItems {
         DeferredRegister.create(ForgeRegistries.ITEMS, HordeMod.MOD_ID);
 
     public static final RegistryObject<Item> SPAWN_TOTEM = ITEMS.register("spawn_totem",
-        () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+        () -> new Item(new Item.Properties().tab(ModCreativeModeTab.HORDE_TAB)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
