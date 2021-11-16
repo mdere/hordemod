@@ -22,7 +22,7 @@ public class ModBlocks {
         DeferredRegister.create(ForgeRegistries.BLOCKS, HordeMod.MOD_ID);
     
     public static final RegistryObject<Block> SPAWN_TOTEM_GROUND_BLOCK = registerBlock("spawn_totem_ground_block",
-        () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(12f)));
+        () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(12f).requiresCorrectToolForDrops()));
 
     public static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
