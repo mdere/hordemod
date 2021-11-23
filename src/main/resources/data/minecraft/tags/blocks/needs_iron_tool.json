@@ -1,6 +1,7 @@
 {
     "replace": false,
     "values": [
-        "hordemod:spawn_totem_ground_block"
+        "hordemod:spawn_totem_ground_block",
+        "hordemod:spawn_totem"
     ]
 }

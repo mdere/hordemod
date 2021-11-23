@@ -13,8 +13,8 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
         DeferredRegister.create(ForgeRegistries.ITEMS, HordeMod.MOD_ID);
 
-    public static final RegistryObject<Item> SPAWN_TOTEM = ITEMS.register("spawn_totem",
-        () -> new Item(new Item.Properties().tab(ModCreativeModeTab.HORDE_TAB)));
+    // public static final RegistryObject<Item> SPAWN_TOTEM = ITEMS.register("spawn_totem",
+    //     () -> new Item(new Item.Properties().tab(ModCreativeModeTab.HORDE_TAB)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

@@ -1,5 +1,6 @@
 {
     "item.hordemod.spawn_totem": "Spawn Totem",
-    "item.hordemod.spawn_totem_ground_block": "Spawn Totem Ground Block",
+    "block.hordemod.spawn_totem_ground_block": "Spawn Totem Ground Block",
+    "block.hordemod.spawn_totem": "Spawn Totem",
     "itemGroup.hordeModTab": "Horde Mod Tab"
 }
