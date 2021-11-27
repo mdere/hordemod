@@ -50,3 +50,18 @@ https://mcforge.readthedocs.io/en/1.17.x/gettingstarted/
 
 
 ./gradlew genVSCodeRuns
+
+# Mod Objects
+## Spawn Totem
+* spirit_amount <int>
+* spirit_amount_max <int>
+* upgrades <map>
+<k: <upgrade_name> v: <upgrade_object>>
+* upgrade_object
+spirit_cost <int>
+max_purchases <int>
+spirit_cost_growth <int> // This is to increase the growth of the upgrade, may need to think about the balance
+purchased <bool>
+current_purchase_count <int>
+* connected_entities <map>
+<k: <entity_name> v: <entity_id>>

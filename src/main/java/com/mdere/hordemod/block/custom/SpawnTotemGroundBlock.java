@@ -6,5 +6,4 @@ public class SpawnTotemGroundBlock extends Block {
     public SpawnTotemGroundBlock(Properties properties) {
         super(properties);
     }
-
 }

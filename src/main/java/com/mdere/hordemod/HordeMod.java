@@ -35,7 +35,7 @@ public class HordeMod
 
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
-        ModBlockEntities.BLOCK_ENTITIES.register(eventBus);
+        ModBlockEntities.register(eventBus);
         // Register the setup method for modloading
         eventBus.addListener(this::setup);
         // Register the enqueueIMC method for modloading
