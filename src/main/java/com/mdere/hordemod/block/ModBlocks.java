@@ -4,6 +4,7 @@ import java.util.function.Supplier;
 
 import com.mdere.hordemod.HordeMod;
 import com.mdere.hordemod.block.custom.SpawnTotemBlock;
+import com.mdere.hordemod.block.custom.SpawnTotemGroundBlock;
 import com.mdere.hordemod.item.ModCreativeModeTab;
 import com.mdere.hordemod.item.ModItems;
 
@@ -24,7 +25,7 @@ public class ModBlocks {
         DeferredRegister.create(ForgeRegistries.BLOCKS, HordeMod.MOD_ID);
     
     public static final RegistryObject<Block> SPAWN_TOTEM_GROUND_BLOCK = registerBlock("spawn_totem_ground_block",
-        () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(12f).requiresCorrectToolForDrops()));
+        () -> new SpawnTotemGroundBlock(BlockBehaviour.Properties.of(Material.METAL).strength(12f).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> SPAWN_TOTEM_BLOCK = registerBlock("spawn_totem",
         () -> new SpawnTotemBlock(BlockBehaviour.Properties.of(Material.METAL).strength(12f).requiresCorrectToolForDrops()));
