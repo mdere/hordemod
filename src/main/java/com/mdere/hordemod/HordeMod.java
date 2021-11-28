@@ -20,6 +20,7 @@ import java.util.stream.Collectors;
 
 import com.mdere.hordemod.block.ModBlocks;
 import com.mdere.hordemod.blockentity.ModBlockEntities;
+import com.mdere.hordemod.container.ModContainers;
 import com.mdere.hordemod.item.ModItems;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -36,6 +37,7 @@ public class HordeMod
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
         ModBlockEntities.register(eventBus);
+        ModContainers.register(eventBus);
         // Register the setup method for modloading
         eventBus.addListener(this::setup);
         // Register the enqueueIMC method for modloading
